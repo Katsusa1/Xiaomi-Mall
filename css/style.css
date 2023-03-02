@@ -1,0 +1,213 @@
+/* 最外层 */
+#margin{
+	width: 100%;
+	height: 3000px;
+}
+
+
+/* 小米明星单品 */
+.content5{
+	margin-top: 15px;
+	width: 1500px;
+	height: 700px;
+	float: left;
+}
+
+.name{
+	line-height: 100px;
+	width: 1500px;
+	height: 100px;
+}
+
+.content5_inner{
+	width: 1500px;
+	height: 500px;
+}
+
+.imgdiv{
+	float: left;
+	opacity: 0.8;
+	border-top: 3px solid orange;
+	background-color: aliceblue;
+	text-align: center;
+	width: 280px;
+	height: 500px;
+	box-sizing: border-box;
+}
+
+.imgdiv:hover{
+	opacity: 1;
+}
+
+.pingpaiimg{
+	margin-left: -20px;
+	transform:scale(0.875) ;
+}
+
+.pingpaili{
+	margin-top: 10px;
+}
+
+.count{
+	font-size: 15px;
+	color: gray;
+}
+
+.weath{
+	color: orange;
+}
+
+.slap{
+	margin-left: 25px;
+}
+
+#slap1{
+	border-top: 3px solid green;
+	box-sizing: border-box;
+}
+
+#slap2{
+	border-top: 3px solid blue;
+	box-sizing: border-box;
+}
+
+#slap3{
+	border-top: 3px solid red;
+	box-sizing: border-box;
+}
+
+#slap4{
+	border-top: 3px solid aqua;
+	box-sizing: border-box;
+}
+
+/* 配件 */
+.content6{
+	background-color: aliceblue;
+	margin-top: 15px;
+	width: 1500px;
+	height: 1158px;
+	float: left;
+}
+
+.content6_inner{
+	width: 1500px;
+	height: 1020px;
+}
+
+#name2{
+	width: 1500px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.content6_innerplus{
+	margin-top: 15px;
+	width: 1500px;
+	height: 500px;	
+}
+
+.content6item{
+	background-color: white;
+	width: 280px;
+	height: 500px;
+	float: left;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.content6item:hover{
+	opacity: 1;
+}
+
+
+.peijianimg{
+	margin: 80px 0 80px;
+}
+
+.peijianli{
+	margin-top: 10px;
+}
+
+.mount{
+	color: gray;
+}
+
+.peijianslap{
+	margin-left: 25px;
+}
+
+#peijianli{
+	line-height: 30px;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	background-color: yellowgreen;
+	left: 100px;
+	color: aliceblue;
+}
+
+#peijianliplus{
+	line-height: 30px;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	background-color: red;
+	left: 100px;
+	color: aliceblue;
+}
+
+#peijianul{
+	position: relative;
+}
+
+#peijian5div{
+	position: relative;
+	text-align: initial;
+	margin-top: 10px;
+	width: 280px;
+	height: 154px;
+	background-color: coral;
+}
+
+#peijian5ul{
+	height: 150px;
+	position: absolute;
+	left: 30px; 
+}
+
+.peijian5li{
+	margin-top: 60px;
+	width: 180px;
+	color: white;
+}
+
+.content6itemplus{
+	opacity: 0.8;
+	float: right;
+	width: 280px;
+	height: 240px;
+	background-color: red;
+}
+
+.content6itemplus:hover{
+	opacity: 1;
+}
+
+#contentitemplus2{
+	margin-top: 20px;
+}
+
+/* 最下面的文字 */
+.content7{
+	width: 100%;
+	height: 238px;
+	background-color: aliceblue;
+	float: left;
+	text-align: center;
+}
+
+#content7ul{
+	margin-top: 60px;
+	line-height: 40px;
+}

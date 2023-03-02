@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城</title>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			
+			ul{
+				
+				list-style: none;
+				margin:0;
+				padding:0;
+			}
+			
+			.box3{
+				float: left;
+			}
+			
+			.box4{
+				float: left;
+			}
+			
+			.box4 img{
+				opacity: 0.8;
+			}
+			
+			.box4 img:hover{
+				opacity: 1;
+			}
+			
+			.box4:not(#c7){
+				margin-left: 10px;
+			}
+			
+			#box{
+				margin: 0 auto;
+				width: 1500px;
+				height: 2762px;
+			}
+			
+			.content{
+				width: 1500px;
+				height: 40px;
+				background-color: rgb(30, 30, 30);
+			}
+			
+			.content2{
+				width: 1500px;
+			}
+			
+			.content3{
+				width: 1500px;
+				height: 460px;
+			}
+			
+			.content4{
+				width: 1500px;
+				height: 252px;
+				margin-top: 10px;
+				float: left;
+			}
+			
+			#a1{
+				width: 800px;
+				height: 40px;
+				line-height: 40px;
+				float: left;
+			}
+			
+			#a2{
+				width: 400px;
+				height: 40px;
+				line-height: 40px;
+				float: right;
+			}
+			
+			#a3{
+				text-align: center;
+				width: 1000px;
+				height: 100px;
+				float: left;
+				line-height: 100px;
+
+				/* padding-top: 40px; */
+			}
+			
+			#a4{
+				position: relative;
+				top: 30px;
+				height: 400px;
+				width: 274px;
+				/* margin-left: 10%; */ 
+			}
+			
+			#gwc{
+				margin-left: 50px;
+				text-align: center;
+				width: 150px;
+				background-color: orange;
+				float: right;
+			}
+			
+			#gwc a{
+				color: aliceblue;
+			}
+			
+			#a3 > li{
+				margin: 10px;
+			}
+			
+			
+			#img1{
+				margin-top: 35px;
+			}
+			
+			#img2{
+				margin-top: 29px;
+			}
+			
+			.item1{
+				color: gray;
+				float: left;
+			}
+			
+			.item2{
+			 	float: right; 
+			} 
+			
+			.item3{
+				float: left;
+			}
+			
+			.item4{
+				/* position: absolute; */ 
+				width: 274px;
+				line-height: 40px;
+				height: 40px;
+				/* left: 30px; */
+			}
+			
+			.item3 > a{
+				color: black;
+			}
+
+			.item4:hover{
+				background-color: orange;
+			}
+				
+			#gwc:hover{
+				background-color: greenyellow;
+			}
+			
+			.box1 a:hover{
+				color: white;
+			}
+			
+			#a1 a:hover{
+				color: white;
+			}
+			
+			#a4 a:hover{
+				color: skyblue;
+			}
+			
+			#a3 a:hover{
+				color: #666;
+			}
+			
+			.item4:hover > .itemimg{
+				display: block;
+			}
+			
+			.itemimg{
+				border: 1px solid #666 ;
+				box-shadow: 1px 1px 2px #666;
+				display: none;
+				position: absolute;
+				width: 900px;
+				height: 460px;
+				background-color: white;
+				top: -30px;
+				left: 274px;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			
+			#a1 a,.item2 a{				
+				color: gray;
+			}
+			
+			#padding{
+				width: 100%;
+				height: 40px;
+				background-color: rgb(30, 30, 30);
+			}
+			
+			#c3{
+				float: left;
+				line-height: 50px;
+				width: 1000px;
+				height: 100px;
+			}
+			
+			#c4{
+				/* text-align: center; */
+				height: 100px;
+				line-height: 100px;
+				float: right;
+				width: 400px;
+			}
+			
+			#c5{
+				position: relative;
+				float: left;
+				width: 274px;
+				height: 460px;
+				background-color: black;
+			}
+			
+			#c6{
+				float: right;
+			}
+			
+			#d1:after,#d2:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			
+			.item4 > a{
+				margin-left: 10px;
+				color: white;
+			} 
+			
+			#c8 img{
+				float: left;
+			}
+			
+			#d1 img{
+				float: left;
+			}
+			
+			#d2 img{
+				float: left;
+			}
+			input{
+				float: left;
+				outline: none;
+				width: 300px;
+				height: 40px;
+				margin-top: 28px;
+			}
+			
+			button{
+				border: none;
+				outline: none;
+				width: 80px;
+				height: 45px;
+			}
+			
+			.itembox{
+				width: 300px;
+				height: 460px; 
+				float: left; 
+				margin-left: 20px;
+			}
+			
+			.itemboxplus{
+				style="width: 300px; 
+				height: 70px; 
+				margin-top: 5px; 
+				float: left;
+			}
+			
+			.img{
+				float: left ; 
+				margin-top: 5px;
+			}
+			
+			.itemli{
+				float: left; 
+				line-height: 70px; 
+				margin-left: 20px;"
+			}
+			
+			.itema{
+				text-align: center;
+				line-height: 30px;
+				float: right; 
+				height: 30px;
+				width: 80px; 
+				margin-top: 20px; 
+				margin-left: 80px;
+				color: orange;
+				background-color: white; 
+				border: 1px orange solid;
+			}
+			
+			.itemboxright{
+				width: 240px;
+				height: 460px; 
+				float: left; 
+				margin-left: 20px;
+			}
+			
+			.itemboxrightplus{
+				width: 240px;
+				height: 70px;
+				margin-top: 5px; 
+				float: left;
+			}
+			
+			.imgright{
+				float: left ;
+				margin-top: 20px;
+			}
+			
+			.imga{
+				margin-left: 20px;
+				line-height: 70px;
+				color: black;
+				text-align: center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="padding">
+		<div id="margin">
+			<div id="box">
+				<div class="content" id="b1">
+					<div class="box1" id="c1">
+						<ul id="a1">
+							<li class="item1"><a href="">小米商城 |</a></li>
+							<li class="item1"><a href="">&nbsp;MIUI |</a></li>
+							<li class="item1"><a href="">&nbsp;米聊 |</a></li>
+							<li class="item1"><a href="">&nbsp;游戏 |</a></li>
+							<li class="item1"><a href="">&nbsp;多看阅读 |</a></li>
+							<li class="item1"><a href="">&nbsp;云服务 |</a></li>
+							<li class="item1"><a href="">&nbsp;金融 |</a></li>
+							<li class="item1"><a href="">&nbsp;小米商城移动版 |</a></li>
+							<li class="item1"><a href="">&nbsp;问题反馈 |</a></li>
+							<li class="item1"><a href="">&nbsp;Select Region</a></li>
+						</ul>
+					</div>
+					<div class="box1" id="c2">
+						<ul id="a2">
+							<div id="gwc"> <a href="">购物车</a></div>
+							<li class="item2"><a href="">&nbsp;消息通知</a></li>
+							<li class="item2"><a href="">&nbsp;注册 |</a></li>
+							<li class="item2"><a href="">登录 |</a></li>
+							<div id="gwc"> <a href=""></a></div>
+							</div>
+						</ul>
+					</div>
+					
+					<div class="content2">
+						<div class="box2" id="c3">
+							<ul id="a3">
+								<img class="item3" id="img1" src="./img/logo_top.png" alt="">
+								<img class="item3" id="img2" src="./img/yyymix.gif" alt="">
+								<li class="item3"><a href="">小米手机</a></li>
+								<li class="item3"><a href="">红米</a></li>
+								<li class="item3"><a href="">平板·笔记本</a></li>
+								<li class="item3"><a href="">电视</a></li>
+								<li class="item3"><a href="">盒子·影音</a></li>
+								<li class="item3"><a href="">路由器</a></li>
+								<li class="item3"><a href="">智能硬件</a></li>
+								<li class="item3"><a href="">服务</a></li>
+								<li class="item3"><a href="">社区</a></li>
+							</ul>
+						</div>
+						<div class="box2" id="c4">
+							<input type="text" placeholder="小米6 小米MIX现货">
+							<button>搜索</button>
+						</div>
+					</div>
+					
+					<div class="content3">
+						<div class="box3" id="c5">
+							<ul id="a4">
+								
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox"">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+										
+										<div class="itembox"">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+											
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+										
+										<div class="itemboxright">
+											<div class="itemboxrightplus">
+												<img class="imgright" src="img/compare.jpg" alt="">
+												<a class="imga" href="">对比手机</a>
+											</div>
+											<div class="itemboxrightplus">
+												<img class="imgright" src="img/compare.jpg" alt="">
+												<a class="imga" href="">对比手机</a>
+											</div>
+											<div class="itemboxrightplus">
+												<img class="imgright" src="img/compare.jpg" alt="">
+												<a class="imga" href="">对比手机</a>
+											</div>
+										</div>
+									</ul>						
+									<a href="">手机</a>
+									<a href="">电话卡</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">笔记本</a>
+									<a href="">平板</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">电视</a>
+									<a href="">盒子</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">路由器</a>
+									<a href="">智能硬件</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">移动电源</a>
+									<a href="">电池</a>
+									<a href="">插线板</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">耳机</a>
+									<a href="">音箱</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">保护套</a>
+									<a href="">贴膜</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">线材</a>
+									<a href="">支架</a>
+									<a href="">储存卡</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">箱包</a>
+									<a href="">服饰</a>
+									<a href="">鞋</a>
+									<a href="">眼镜</a>
+								</li>
+								<li class="item4">
+									<ul class="itemimg">
+										<div class="itembox">
+											<div class="itemboxplus">
+												<img class="img" src="img/gwc_xiaomi6.jpg" alt="">
+												<li class="itemli">小米6</li>
+												<a href="" class="itema">选购</a>
+											</div>
+										</div>
+									</ul>
+									<a href="">米兔</a>
+									<a href="">生活周边</a>
+								</li>
+							</ul>
+						</div>
+						
+						<a href="">
+							<div class="box3" id="c6">
+								<img src="img/banner2.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					
+					<div class="content4">
+						<div class="box4" id="c7">
+							<div id="d1">
+								<a href="">
+									<img src="img/hjh_01.gif" alt="">
+								</a>
+								<a href="">
+									<img src="img/hjh_02.gif" alt="">
+								</a>
+								<a href="">
+									<img src="img/hjh_03.gif" alt="">
+								</a>
+							</div>
+							<div id="d2">
+								<a href="">
+									<img src="img/hjh_04.gif" alt="">
+								</a>
+								<a href="">
+									<img src="img/hjh_05.gif" alt="">
+								</a>
+								<a href="">
+									<img src="img/hjh_06.gif" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="box4" id="c8">
+							<a href="">
+								<img src="img/hongmi4x.png" alt="">
+							</a>
+						</div>
+						<div class="box4" id="c9">
+							<a href="">
+								<img src="img/xiaomi5.jpg" alt="">
+							</a>
+						</div>
+						<div class="box4" id="c10">
+							<a href="">
+							<img src="img/pinghengche.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					
+					<div class="content5">
+						<h1 class="name">小米明星单品</h1>
+						<div class="content5_inner">
+							
+							<a href="">
+								<div class="imgdiv">
+									<img class="pingpaiimg" src="img/pinpai1.png" alt="">
+									<ul>
+										<li>小米MIX</li>
+										<li class="pingpaili count"">5月9日-21日拿花呗12期分期免息</li>
+										<li class="pingpaili weath">3499元起</li>
+									</ul>
+								</div>
+							</a>
+							
+							<a href="">
+								<div class="imgdiv slap" id="slap1">
+									<img class="pingpaiimg" src="img/pinpai2.png" alt="">
+									<ul>
+										<li>小米MIX</li>
+										<li class="pingpaili count"">5月9日-10日，下单立减200元</li>
+										<li class="pingpaili weath">1999元</li>
+									</ul>
+								</div>
+							</a>
+							
+							<a href="">
+								<div class="imgdiv slap" id="slap2">
+									<img class="pingpaiimg" src="img/pinpai3.png" alt="">
+									<ul>
+										<li>小米MIX</li>
+										<li class="pingpaili count"">5月9日-10日，下单立减100元</li>
+										<li class="pingpaili weath">1799元</li>
+									</ul>
+								</div>
+							</a>
+							
+							<a href="">
+								<div class="imgdiv slap" id="slap3">
+									<img class="pingpaiimg" src="img/pinpai4.png" alt="">
+									<ul>
+										<li>小米电视3s 55英寸</li>
+										<li class="pingpaili count"">5月9日，下单立减200元</li>
+										<li class="pingpaili weath">3999元</li>
+									</ul>
+								</div>
+							</a>
+							
+							<a href="">
+								<div class="imgdiv slap" id="slap4">
+									<img class="pingpaiimg" src="img/pinpai5.png" alt="">
+									<ul>
+										<li>小米笔记本</li>
+										<li class="pingpaili count"">更轻更薄，像杂志一样随时携带</li>
+										<li class="pingpaili weath">3599元起</li>
+									</ul>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+					
+					<div class="content6">
+						<h1 id="name2">配件</h1>
+						
+						<div class="content6_inner">
+							<div class="content6_innerplus">
+								<div class="content6item">
+									<a href="">
+										<img src="img/peijian1.jpg" alt="">
+									</a>
+								</div>
+								<div class="content6item peijianslap">
+									<a href="">
+										<ul id="peijianul">
+											<li id="peijianli">新品</li>
+										</ul>
+										<img class="peijianimg" src="img/peijian2.jpg" alt="">
+										<ul>
+											<li>小米手机6 硅胶保护套</li>
+											<li class="peijianli weath">49元</li>
+											<li class="peijianli mount">372人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+								<div class="content6item peijianslap">
+									<a href="">
+										<img class="peijianimg" src="img/peijian3.jpg" alt="">
+										<ul>
+											<li>小米手机4c 小米4c 智能</li>
+											<li class="peijianli weath">29元</li>
+											<li class="peijianli mount">372人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+								<div class="content6item peijianslap">
+									<a href="">
+										<ul id="peijianul">
+											<li id="peijianliplus">享4折</li>
+										</ul>
+										<img class="peijianimg" src="img/peijian4.jpg" alt="">
+										<ul>
+											<li>红米NOTE 4X 红米note4X</li>
+											<li class="peijianli weath">19元</li>
+											<li class="peijianli mount">372人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+								<div class="content6item peijianslap">
+									<a href="">
+										<img class="peijianimg" src="img/peijian5.jpg" alt="">
+										<ul>
+											<li>小米支架式自拍杆</li>
+											<div id="peijian5div">
+												<ul id="peijian5ul">
+													<li class="peijian5li">发货速度很快!很配小米6!来自于mi狼牙的评价</li>
+												</ul>
+											</div>
+										</ul>
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class="content6_innerplus">
+								<div class="content6item">
+									<a href="">
+										<img src="img/peijian6.png" alt="">
+									</a>
+								</div>
+								<div class="content6item peijianslap">
+									<a href="">
+										<img class="peijianimg" src="img/peijian7.jpg" alt="">
+										<ul>
+											<li>小米指环支架</li>
+											<li class="peijianli weath">19元</li>
+											<li class="peijianli mount">372人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+								<div class="content6item peijianslap">
+									<a href="">
+										<img class="peijianimg" src="img/peijian8.jpg" alt="">
+										<ul>
+											<li>小米随身风扇</li>
+											<li class="peijianli weath">19.9元</li>
+											<li class="peijianli mount">372人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+								<div class="content6item peijianslap">
+									<a href="">
+										<img class="peijianimg" src="img/peijian9.jpg" alt="">
+										<ul>
+											<li>小米4X 高透软胶保护套</li>
+											<li class="peijianli weath">59元</li>
+											<li class="peijianli mount">775人评价</li>
+										</ul>
+									</a>
+								</div>
+								
+									<a href="">
+										<div class="content6itemplus peijianslap">
+											<img src="img/hongmin4.png" alt="">
+											
+										</div>	
+									</a>
+									
+									<a href="">
+										<div class="content6itemplus peijianslap" id="contentitemplus2">
+											<img src="img/liulangengduo.png" alt="">											
+										</div>	
+									</a>		
+								</div>					
+						</div>
+					</div>
+				
+					<!-- <div class="content7">
+						<ul id="content7ul">
+							<li>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</li>
+							<li>@mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</li>
+							<li>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+						</ul>
+					</div> -->
+						
+			</div>
+			
+			<div class="content7">
+				<ul id="content7ul">
+					<li>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</li>
+					<li>@mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</li>
+					<li>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</li>
+				</ul>
+			</div>
+			
+		</div>
+					
+		</div>
+	</body>
+</html>
